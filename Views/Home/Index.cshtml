@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Accueil";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Bienvenu(e) sur <span class="text-primary nav-link">MaPage</span></h1>
+</div>
+
+<form class="connexion">
+  <h4 class="display-6">Connexion</h4>
+  <div class="form-group mt-4">
+    <label for="email">Votre e-mail:</label>
+    <input type="email" class="form-control" id="email" required>
+  </div>
+  <div class="form-group mt-4">
+    <label for="pwd">Votre mot de passe:</label>
+    <input type="password" class="form-control" id="pwd" required>
+  </div>
+  <div class="form-group d-flex w-100 justify-content-between mt-4 pe-5">
+    <button type="submit" class="btn btn-primary w-75 text-center">Submit</button>
+    <a class="text-end" asp-controller="Home" asp-action="Inscription">S'inscrire</a>
+  </div>
+</form>
